@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: hsl(180, 52%, 96%) !important;
+    overflow-x: hidden;
+}
+
+li{
+    margin: 10px 0;
+}
+
+.remove-icon{
+    background-color: hsl(180, 29%, 50%);
+    padding: 5px;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.remove-icon:hover{
+    background-color: hsl(180, 14%, 20%);
+}
+
+#clear-btn{
+    position: relative;
+    top: 20px;
+    padding: 0 20px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
+#clear-btn:hover{
+    cursor: pointer;
+}
+
+.job-item{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.filters{
+    margin-bottom: 0 !important;
+}
+
+.filter-card{
+    position: relative;
+    bottom: 60px;
+    display: none;
+}
+
+.filter-section{
+    background-color: white;
+    border-radius: 5px;  
+    padding: 18px;
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+
+.selected-filter{
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+
+
+
+.new-job-item{
+        border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.img-section{
+    background-color: hsl(180, 29%, 50%);
+}
+
+.job-info-section-1{
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.job-item-title{
+    color:hsl(180, 29%, 50%);
+}
+
+.new-item{
+    color: white;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 20px;
+    padding: 8px;
+    font-size: smaller;
+}
+
+.featured-item{
+    color: white;
+    background-color: hsl(180, 14%, 20%);
+    border-radius: 20px;
+    padding: 8px;
+    font-size: smaller;
+}
+
+.point-decoration{
+    position: relative;
+    bottom: 4px;
+}
+
+.filter-item{
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.filter-item:hover{
+    cursor: pointer;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.job-info-section-2{
+    color: hsl(180, 8%, 52%);
+}
+
+h5{
+    color: hsl(180, 14%, 20%);
+    font-weight: 700 !important;
+}
+
+h5:hover{
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .job-filters{
+        padding-bottom: 0 !important;
+    }
+
+    .job-card{
+        padding: 0 25px !important;
+        margin-top: 25px;
+    }
+    .job-img-section{
+        position: absolute;
+    }
+    
+    .job-images{
+        position: relative;
+        bottom: 50px;
+        width: 70px;
+    }
+
+    .job-info-section{
+        border-bottom: 1px solid rgb(232,232,232);
+    }
+    
+    .job-info-section-2{
+        padding-bottom: 10px;
+    }
+
+    .info-section-details{
+        display: inline;
+    }
+    
+    .job-info{
+        margin-top: 25px;
+
+    }   
+}
+
+
+@media only screen and (min-width: 768px) {
+    .job-images{
+        width: 190px;
+    }
+
+    .all-job-details{
+        padding-left: 50px;
+    }
+
+    .info-section-details{
+        display: inline;
+    }
+
+    .job-img-section{
+        float: left;
+    }
+
+    .job-item{
+        padding-bottom: 20px;
+    }
+
+    .job-filters{
+        padding-top: 0;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .job-images{
+        width: 125px;
+    }
+
+    .info-section-details{
+        display: inline;
+    }
+
+    .selected-job-filters {
+        padding-top: 0 !important;
+    }
+    
+    .all-job-details{
+        padding-left: 0;
+    }
+
+    .job-img-section{
+        float: left;
+    }
+
+    .job-item{
+        padding-bottom: 20px;
+    }
+
+    .job-filters{
+        padding-top: 35px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .job-item, .filter-section {
+        margin: 0 100px;
+    }  
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .job-item, .filter-section {
+        margin: 0 200px;
+    } 
+}
+
